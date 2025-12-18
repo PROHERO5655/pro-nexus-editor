@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Nexus Editor | AI Powerhouse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: #05050a; color: #00f2ff; margin: 0; font-family: sans-serif;">
+    <div style="padding: 20px; border-bottom: 2px solid #3300ff; display: flex; gap: 10px;">
+        <h2 style="margin: 0;">Cerebro Hub</h2>
+        <button onclick="alert('Voice Lab Loading...')">🎙️ Voice Lab</button>
+        <button onclick="alert('Sora Engine Loading...')">🎥 Sora AI</button>
+    </div>
+    <div style="height: 50vh; background: #111; display: flex; align-items: center; justify-content: center;">
+        <p>Infinite Canvas (Ibis Style) Ready for Forge</p>
+    </div>
+    <div style="height: 20vh; background: #000; border-top: 2px solid #3300ff; padding: 10px;">
+        <p>Filmora Style Timeline</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
