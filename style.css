@@ -1,0 +1,52 @@
+/* Pro Hero Nexus Theme */
+body {
+    background-color: #05050a;
+    color: #00f2ff;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.ai-hub {
+    background: rgba(10, 10, 30, 0.95);
+    border-bottom: 2px solid #3300ff;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+}
+
+button {
+    background: linear-gradient(45deg, #3300ff, #00f2ff);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#canvas-container {
+    height: 55vh;
+    background-image: radial-gradient(#1a1a2e 1px, transparent 1px);
+    background-size: 30px 30px; /* Ibis Paint style grid */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-container {
+    height: 25vh;
+    background: #000;
+    border-top: 2px solid #3300ff;
+    padding: 15px;
+}
+
+.track {
+    height: 40px;
+    background: #111;
+    border: 1px solid #222;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-left: 10px solid #00f2ff; /* Visual cue for video track */
+}
