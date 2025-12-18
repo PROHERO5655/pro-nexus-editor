@@ -1,23 +1,38 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro Nexus Editor | AI Powerhouse</title>
+    <title>Pro Nexus Editor</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background: #05050a; color: #00f2ff; margin: 0; font-family: sans-serif;">
-    <div style="padding: 20px; border-bottom: 2px solid #3300ff; display: flex; gap: 10px;">
-        <h2 style="margin: 0;">Cerebro Hub</h2>
-        <button onclick="alert('Voice Lab Loading...')">🎙️ Voice Lab</button>
-        <button onclick="alert('Sora Engine Loading...')">🎥 Sora AI</button>
+<body>
+    <div class="ai-hub">
+        <h2 id="logo">Cerebro Hub</h2>
+        <button onclick="openVoiceLab()">🎙️ VOICE LAB (Fish.audio)</button>
+        <button onclick="openSoraAI()">🎥 SORA AI (Video Gen)</button>
     </div>
-    <div style="height: 50vh; background: #111; display: flex; align-items: center; justify-content: center;">
-        <p>Infinite Canvas (Ibis Style) Ready for Forge</p>
+
+    <div id="canvas-container">
+        <p>Infinite Canvas (Ibis Style) - Ready for Forge</p>
     </div>
-    <div style="height: 20vh; background: #000; border-top: 2px solid #3300ff; padding: 10px;">
+
+    <div class="timeline-container">
         <p>Filmora Style Timeline</p>
+        <div class="track"></div>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        // Seedha browser mein logic
+        function openVoiceLab() {
+            window.open('https://fish.audio/', '_blank'); 
+            alert("Pro Hero! Voice Lab is opening. Use Fish.audio for Josh Bhari Voice!");
+        }
+
+        function openSoraAI() {
+            window.open('https://lumaal.com/dream-machine', '_blank'); // Sora jaisa free option
+            alert("Sora Engine: Opening AI Video Generator...");
+        }
+    </script>
 </body>
 </html>
