@@ -1,38 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro Nexus Editor</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="ai-hub">
-        <h2 id="logo">Cerebro Hub</h2>
-        <button onclick="openVoiceLab()">🎙️ VOICE LAB (Fish.audio)</button>
-        <button onclick="openSoraAI()">🎥 SORA AI (Video Gen)</button>
+<style>
+    /* Filmora Style Grid */
+    .toolbox-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 15px;
+        background: #000;
+        height: 80vh;
+        overflow-y: auto;
+    }
+    .tool-card {
+        background: #1a1a1a;
+        border-radius: 12px;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #333;
+        transition: 0.3s;
+    }
+    .tool-card:hover { border-color: #00f2ff; transform: translateY(-5px); }
+    .tool-img { width: 100%; border-radius: 8px; margin-bottom: 8px; }
+    .tool-name { font-size: 12px; color: #eee; font-weight: bold; }
+    .ai-tag { color: #00f2ff; font-size: 10px; display: block; }
+</style>
+
+<div class="header">
+    <div class="logo">PRO NEXUS - TOOLBOX</div>
+</div>
+
+<div class="toolbox-grid">
+    <div class="tool-card" onclick="openTool('voice')">
+        <img src="https://img.icons8.com/neon/96/microphone.png" class="tool-img">
+        <span class="ai-tag">✨ AI-BASED</span>
+        <span class="tool-name">AI Voice Cloning</span>
     </div>
 
-    <div id="canvas-container">
-        <p>Infinite Canvas (Ibis Style) - Ready for Forge</p>
+    <div class="tool-card" onclick="openTool('video')">
+        <img src="https://img.icons8.com/neon/96/video-camera.png" class="tool-img">
+        <span class="ai-tag">✨ AI-BASED</span>
+        <span class="tool-name">Text to Video</span>
     </div>
 
-    <div class="timeline-container">
-        <p>Filmora Style Timeline</p>
-        <div class="track"></div>
+    <div class="tool-card" onclick="alert('Removing Objects...')">
+        <img src="https://img.icons8.com/neon/96/eraser.png" class="tool-img">
+        <span class="ai-tag">✨ NEW</span>
+        <span class="tool-name">AI Remover</span>
     </div>
 
-    <script>
-        // Seedha browser mein logic
-        function openVoiceLab() {
-            window.open('https://fish.audio/', '_blank'); 
-            alert("Pro Hero! Voice Lab is opening. Use Fish.audio for Josh Bhari Voice!");
+    <div class="tool-card" onclick="alert('Syncing Beats...')">
+        <img src="https://img.icons8.com/neon/96/audio-wave.png" class="tool-img">
+        <span class="tool-name">AI Beat Sync</span>
+    </div>
+</div>
+
+<script>
+    function openTool(type) {
+        if(type === 'voice') {
+            window.open('https://fish.audio/', '_blank');
+        } else if(type === 'video') {
+            window.open('https://lumaal.com/dream-machine', '_blank');
         }
-
-        function openSoraAI() {
-            window.open('https://lumaal.com/dream-machine', '_blank'); // Sora jaisa free option
-            alert("Sora Engine: Opening AI Video Generator...");
-        }
-    </script>
-</body>
-</html>
+    }
+</script>
